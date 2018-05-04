@@ -1,0 +1,14 @@
+server:
+  port: 8081
+  tomcat:
+    max-threads: 800
+    uri-encoding: UTF-8
+    accept-count: 500
+jms:
+  url: tcp://127.0.0.1:61616
+  requestQueue: product-request-queue
+  responseQueue: product-response-queue
+
+management:
+  security:
+    enabled: false

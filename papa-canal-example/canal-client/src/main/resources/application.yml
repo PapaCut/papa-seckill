@@ -1,0 +1,13 @@
+canal:
+  host: 127.0.0.1
+  port: 11111
+  destination: example
+  username:
+  passname:
+
+jms:
+  url: tcp://127.0.0.1:61616
+  destination: canal-cache
+
+server:
+  port: 8081

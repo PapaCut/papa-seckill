@@ -1,0 +1,6 @@
+server:
+  port: 8082
+jms:
+  url: tcp://127.0.0.1:61616
+  requestQueue: product-request-queue
+  responseQueue: product-response-queue
