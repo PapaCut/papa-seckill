@@ -57,7 +57,7 @@ public class CacheMessageSender implements InitializingBean, ApplicationContextA
     public void afterPropertiesSet() throws Exception {
         JmsTemplate jmsTemplate = applicationContext.getBean(JmsTemplate.class);
         if(jmsTemplate == null) {
-            throw new RuntimeException("Not found jmsTemplate from ioc");
+            throw new IllegalStateException("Not found jmsTemplate from beanFactory");
         }
         this.jmsTemplate = jmsTemplate;
     }

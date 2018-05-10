@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 /**
  * Created by PaperCut on 2018/3/1.
+ * 商品传输对象
  */
 public class ProductDto implements Serializable{
     private final int userId;

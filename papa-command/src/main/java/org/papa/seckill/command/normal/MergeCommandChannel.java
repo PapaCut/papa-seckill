@@ -8,6 +8,7 @@ import java.util.function.Consumer;
 
 /**
  * Created by PaperCut on 2018/2/25.
+ * Disruptor有批量、我也要有..
  */
 public class MergeCommandChannel implements CommandChannel {
     private final CommandBuffer commandBuffer;

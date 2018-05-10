@@ -17,7 +17,6 @@ public class ProductHandler implements RequestHandler<ProductDto> {
 
     @Override
     public RequestEvent<ProductDto> onEvent(RequestEvent<ProductDto> event) {
-
         try {
             RequestDto<ProductDto> requestDto = event.getRequestDto();
             ProductDto productDto = requestDto.getPayload();
