@@ -34,7 +34,7 @@ public class DefaultCommandBus implements CommandBus{
         try {
             channel.getConsumer().accept(command);
         } catch (Exception e) {
-
+            //TODO 未处理
         }
     }
 }

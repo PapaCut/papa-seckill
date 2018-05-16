@@ -9,11 +9,11 @@ import java.util.concurrent.ConcurrentMap;
 public class DefaultThreadPoolManager {
     private static ConcurrentMap<String, ThreadPool> poolsMap = null;
 
-    public static synchronized void registerThreadPool(String name, ThreadPool threadPool) {
+    public static synchronized ThreadPool registerThreadPool(String name, ThreadPool threadPool) {
         if(poolsMap == null) {
             poolsMap = new ConcurrentHashMap();
         }
-        poolsMap.put(name, threadPool);
+        return poolsMap.put(name, threadPool);
     }
 
     public static synchronized void unRegisterThreadPool(String name) {

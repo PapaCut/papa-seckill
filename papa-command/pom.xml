@@ -37,6 +37,12 @@
 
         <dependency>
             <groupId>org.papa.seckill</groupId>
+            <artifactId>papa-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.papa.seckill</groupId>
             <artifactId>papa-disruptor</artifactId>
             <version>1.0.0</version>
         </dependency>
